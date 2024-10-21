@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Triangulo } from 'src/app/Figuras/figuras';
+import { IonLabel, IonInput, IonCard, IonCardHeader } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-triangulo',

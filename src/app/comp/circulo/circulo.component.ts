@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Circulo } from 'src/app/Figuras/figuras';
+import { IonInput, IonCard, IonCardHeader, IonCardTitle } from "@ionic/angular/standalone";
 
 @Component({
   selector: 'app-circulo',
