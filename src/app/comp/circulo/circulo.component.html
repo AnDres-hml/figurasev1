@@ -1,4 +1,13 @@
-<p>
-  Radio: {{radio}}
-  Resultado: {{resultado}}
-</p>
+<ion-card>
+  <ion-card-header>Círculo</ion-card-header>
+  <ion-card-content>
+    <form (ngSubmit)="calcularPerimetro()">
+      <ion-item>
+        <ion-label>Radio</ion-label>
+        <ion-input type="number" [(ngModel)]="radio" name="radio" required></ion-input>
+      </ion-item>
+      <ion-button type="submit">Calcular Perímetro</ion-button>
+    </form>
+    <p *ngIf="resultado !== null">El perímetro es: {{ resultado }}</p>
+  </ion-card-content>
+</ion-card>
